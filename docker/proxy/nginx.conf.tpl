@@ -32,7 +32,7 @@ http {
     ssl on;
     ssl_certificate /etc/nginx/nginx.crt;
     ssl_certificate_key /etc/nginx/nginx.key;
-	  ssl_protocols TLSv1.2;
+    ssl_protocols TLSv1.2;
 
     log_subrequest on;
 

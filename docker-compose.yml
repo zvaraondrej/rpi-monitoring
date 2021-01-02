@@ -7,9 +7,6 @@ services:
     build:
       context: .
       dockerfile: docker/proxy/Dockerfile
-      args:
-        CONSUL_ARCH: "linux_arm"
-        CONSUL_TEMPLATE_VERSION: "0.25.1"
     restart: always
     hostname: proxy
     container_name: proxy

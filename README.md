@@ -1,7 +1,7 @@
 
 # Raspberry Pi Monitoring with Prometheus, Grafana & Cadvisor
 
-First of all, let me say this project was created for a personal use. This is a basis for further work (running another containers on Pi) The Pi is located on a local network. Maybe someone will find the setup usefull, thus I'm publishing it.
+First of all, let me say this project was created for a personal use. This is a basis for further work (running another containers on Pi). The Pi is located on a local network. Maybe someone will find the setup usefull, thus I'm publishing it.
 
 ## References
 
@@ -32,11 +32,11 @@ e.g.:
 scp -r -i ~/.ssh/id_rsa ~/rpi-monitoring/* pi@192.168.1.20:/home/pi/
 ```
 
-### Crete nginx certificates
+### Create nginx certificates
 
 You need to create self signed certificate in order to use HTTPS with you exposed proxy. You can use any guide, e.g. the one from [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-16-04).
 
-The `.crt.` and `.key` files should reside in `./docker/proxy`.
+The `.crt.` and `.key` files should reside in `./docker/proxy/`.
 
 ## Starting the services
 
